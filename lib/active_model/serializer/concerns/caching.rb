@@ -172,6 +172,7 @@ module ActiveModel
         # @return [Hash]
         # Used in CollectionSerializer to set :cached_attributes
         def cache_read_multi(collection_serializer, adapter_instance, include_directive)
+          puts "\n\nHELLO PR TEST\n\n"
           return {} if ActiveModelSerializers.config.cache_store.blank?
 
           keys = object_cache_keys(collection_serializer, adapter_instance, include_directive)
